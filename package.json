@@ -16,7 +16,27 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "extends": [
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "strict": 0,
+        "indent": ["error", 4],
+        "space-before-function-paren": "off",
+        "brace-style": ["error", "stroustrup"],
+        "no-console": "warn",
+        "yoda": "warn",
+        "no-var": "warn"
+    }
   },
    "homepage": "http://shoobah.github.io/dblab"
 }
